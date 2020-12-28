@@ -19,17 +19,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-        auth = FirebaseAuth.getInstance()
-//        startActivity(Intent(this@MainActivity, AddDataActivity::class.java))
-        GlobalScope.launch {
-            delay(2000)
-            if (this@MainActivity.auth.currentUser !== null) {
-                startActivity(Intent(this@MainActivity, DashboardActivity::class.java))
-                finish()
-            } else {
-                startActivity(Intent(this@MainActivity, SignInActivity::class.java))
-                finish()
-            }
-        }
+//        auth = FirebaseAuth.getInstance()
+////        startActivity(Intent(this@MainActivity, AddDataActivity::class.java))
+//        GlobalScope.launch {
+//            delay(2000)
+//            if (this@MainActivity.auth.currentUser !== null) {
+//                startActivity(Intent(this@MainActivity, DashboardActivity::class.java))
+//                finish()
+//            } else {
+//                startActivity(Intent(this@MainActivity, SignInActivity::class.java))
+//                finish()
+//            }
+//        }
     }
 }

@@ -25,6 +25,19 @@
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_notif"
+                android:text="add notification"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_add"
+                android:text="add data"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     <include layout="@layout/activity_detail_slider"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

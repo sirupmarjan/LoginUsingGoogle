@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Slider.DetailSlider"></activity>
+        <activity android:name=".Activity.ScrollActivity"></activity>
+        <activity android:name=".Slider.DetailSlider" />
         <activity android:name=".Activity.DashboardActivity" />
         <activity android:name=".Activity.SignInActivity" />
         <activity android:name=".Activity.AddDataActivity" />

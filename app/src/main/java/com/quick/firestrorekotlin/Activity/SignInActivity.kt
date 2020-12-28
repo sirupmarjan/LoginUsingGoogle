@@ -26,6 +26,12 @@ class SignInActivity : AppCompatActivity() {
         supportActionBar?.hide()
         auth = FirebaseAuth.getInstance()
 
+
+        if (this.auth.currentUser !== null) {
+                startActivity(Intent(this, DashboardActivity::class.java))
+                finish()
+            }
+
         btn_signIn.setOnClickListener {
             val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.web_client_id))
@@ -63,4 +69,5 @@ class SignInActivity : AppCompatActivity() {
             }
         }
     }
+    
 }
